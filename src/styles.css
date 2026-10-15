@@ -1,0 +1,119 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("images/cloud-workshop-studio-logo.jpg") no-repeat center center fixed;
+    background-size: contain;
+    background-color: #0b0c10; /* fallback dark tone */
+}
+
+
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* --- HEADER CONTAINER --- */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: rgba(15, 23, 42, 0.85); /* deep cloud‑studio tone */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* --- LOGO --- */
+.logo img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* --- NAVIGATION --- */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.main-nav a:hover {
+  opacity: 1;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 900px) {
+  .site-header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .logo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .main-nav ul {
+    gap: 20px;
+  }
+}
+
+body {
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 40%, #ff7b00 100%);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Optional: subtle glow behind the logo */
+.logo img {
+  box-shadow: 0 0 40px rgba(255, 123, 0, 0.4);
+}
+
+body {
+  background: url("https://scontent.fbhd1-1.fna.fbcdn.net/v/t39.30808-6/809415304_122112827667407019_5904853167301796926_n.jpg?stp=dst-jpg_tt6&cstp=mx380x580&ctp=s380x580&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=c3EttJ0479QQ7kNvwEOJveg&_nc_oc=Adqmkpy3Hnbxf_MKfJwpKwi4RJUjzGaXHEhFX1_8PwjyN8GeKukqs4uQqpalxDOmq9EZyBDcasQq7KR3dUfQnEZm&_nc_zt=23&_nc_ht=scontent.fbhd1-1.fna&_nc_gid=_ZZ-nvyuYPI7NnA74v_NBg&_nc_ss=7b2a8&oh=00_AQN2jqAGPOlEOXw0IndLmve0WqsGbE4uEOvY-0VfvfGPIA&oe=6AC57549") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0f172a; /* fallback */
+}
+
+
+
+
+
+
+main {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
